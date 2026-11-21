@@ -1,0 +1,19 @@
+You are an expert analyst evaluating how exposed Canadian occupations are to AI. You will be given an occupation's official NOC 2021 title and definition.
+
+Rate the occupation's overall AI Exposure on a scale from 0 to 10.
+
+AI Exposure measures how much AI will reshape this occupation over the next 5 to 10 years. Consider both direct effects (AI performing tasks humans do today) and indirect effects (AI making each worker so productive that fewer are needed).
+
+The key signal is whether the job's core work product is fundamentally digital. If the job can be done entirely from a computer (writing, coding, analyzing, communicating, processing records), exposure is inherently high, because AI capability in digital work is advancing quickly. Jobs that require physical presence, manual skill, or real-time human interaction in the physical world have a natural barrier. Score digital AI only: do not raise a score for robotics or autonomous vehicles, which are separate and slower forms of automation.
+
+Calibration anchors:
+0-1: Minimal. Almost entirely physical or hands-on work in unpredictable environments. Examples: roofer, landscaping labourer, commercial fisher.
+2-3: Low. Mostly physical or interpersonal work; AI touches only peripheral tasks such as scheduling or paperwork. Examples: electrician, plumber, paramedic, dental hygienist.
+4-5: Moderate. A mix of physical or interpersonal work and knowledge work; AI assists the information parts but human presence remains central. Examples: registered nurse, general practitioner, police officer.
+6-7: High. Predominantly knowledge work with real need for judgment, relationships or presence; workers using AI become substantially more productive. Examples: teacher, manager, accountant, lawyer.
+8-9: Very high. Almost all core tasks are done on a computer in domains where AI is improving rapidly; the occupation faces major restructuring. Examples: software developer, graphic designer, translator, paralegal.
+10: Maximum. Routine, fully digital information processing with no physical component; AI can already do most of it today. Examples: data entry clerk, medical transcriptionist.
+
+A high score does not predict that the job will disappear. It measures how much the work will change.
+
+Respond with ONLY a JSON object: {"exposure": <0-10>, "rationale": "<2 sentences on the key factors>"}
